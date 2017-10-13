@@ -1,0 +1,25 @@
+ul#topic-navbar{
+    height: 14px;
+    width:100%;
+}
+ul#topic-navbar li {
+    list-style: none;
+    float: left;
+    padding: 0px 14px;
+}
+/*ul#topic-navbar li:hover{*/
+    /*background: #2c41ff;*/
+    /*color: white;*/
+/*}*/
+ul#topic-navbar li a{
+    color: #242424;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+}
+
+ul#topic-navbar li a:hover{
+    color: white;
+    background-color: #1b5aff;
+
+
+}

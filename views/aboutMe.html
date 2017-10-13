@@ -1,0 +1,88 @@
+<%-layout('layout')%>
+<div class="container">
+    <div class="row">
+
+
+
+        <!--关于博主信息-->
+        <div class="about-content col-lg-8" style="margin-top:0px;background-color: white;padding-top: 10px">
+            <!--面包屑导航-->
+            <ol class="breadcrumb" style="background-color: white;">
+                <li><a href="/"><span class="glyphicon glyphicon-send"></span> 首页</a></li>
+                <li><span>关于博主</span></li>
+            </ol>
+
+            <div class="personal-profile" style="overflow:auto;padding-left: 0px;padding-right: 10px">
+                <img class="pull-left" src="/public/images/ME.jpg" width="340" height="404" alt="梅真好">
+                <div class="pull-right" style=" width: 420px;">
+                    <ul class="list" style="list-style: none">
+                        <li>
+                            <h2 class="title">
+                                一、关于博主
+                            </h2>
+                            <p class="text" style="line-height: 25px;font-size: 16px">
+                                1.一个对于"web前端"和"java后端"稍有研究的，90后学渣一枚。
+                            </p>
+                            <p class="text" style="line-height: 25px;font-size: 16px">
+                                2.考研人爱分享社区的创始人。
+                            </p>
+                        </li>
+                        <li>
+                            <h2 class="title">
+                                二、关于金牛座
+                            </h2>
+                            <p class="text" style="line-height: 25px;font-size: 16px">
+                                我属于金牛座:很多时候觉得自己对待任何事都很执着，一旦定了目标，就会不达目标不罢休，永不退缩！ 面对爱情也是一样，当真正遇到自己喜欢的一个人，会不顾一切去追。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="personal-info" style="margin-top: 20px;line-height: 25px;font-size: 16px">
+                <p class="text" style="text-indent: 2em">
+                    在我认为：不管学习什么东西，一定要有属于自己的“学习方法”和善于“对事物的总结”。
+                </p>
+                <p class="text" style="text-indent: 2em;line-height: 25px;font-size: 16px">
+                    俗话说的好：“方向不对，努力白费！”很多人都是盲目的去学习，导致花了大量的时间，在学习一些没有用处的东西，到头来什么都没学会，因此会打击自己的学习欲望，也会让自己处于迷茫当中...一个优秀的传道授业者“不单单传授的是知识，更多传授的是思维和方法”。---授人以鱼不如授人以渔
+                </p>
+                <p class="text" style="text-indent: 2em;line-height: 25px;font-size: 16px">
+                    其实，人的一生中都是在不断的学习，不管是技术也好，做人也罢！我觉得都应该以一颗“谦卑的心态来学习，秉持利他之心来帮助他人。”
+                </p>
+                <p class="text" style="text-indent: 2em;line-height: 25px;font-size: 16px">
+                    人就得学会感恩，滴水之恩应当涌泉相报。感谢那些曾经帮助过我的人，因为有你们我才会变得如此的优秀。
+                </p>
+                <img class="autograph pull-right" style="margin-top: 20px;margin-bottom: 20px" src="/public/images/qianming.png" width="106" height="50" alt="博主个性签名">
+            </div>
+        </div>
+
+        <!--个人详细信息-->
+        <div class="personal-msg col-lg-4 pull-right" style="padding-right: 0px">
+            <div style="background-color: white;margin-left: 10px;padding:8px">
+                <h2 class="title-h2" style="border-left: 2px solid blue;padding-left: 5px">
+                    个人信息
+                </h2>
+                <ul class="list-text" style="list-style:none;line-height: 30px;font-size: 16px">
+                    <li>姓名：梅真好</li>
+                    <li>Q Q：2323794414</li>
+                    <li>职业：在校研究生</li>
+                    <li>爱好：旅游、K歌</li>
+                    <li>喜欢的歌手：薛之谦、毛不易、张学友...</li>
+                    <li>喜欢的音乐：只要好听就行，偏爱于抒情类歌曲，哈哈！</li>
+                    <li>人生格言：慢慢来，你想要的岁月都会给你！</li>
+                </ul>
+            </div>
+        </div>
+        <!--回到顶部-->
+        <div style="width: 100px; height: 3000px;">
+            <!--这个带ID的p标签，叫做锚标记，放在页面顶部位置，目的：防止代码不起作用时(比如类库版本浏览器不支持)，你点击回到顶部，仍然可以通过锚标记实现-->
+            <p id="pageTop"></p>
+            <section id="top_sec" class="top_sec">
+                <a href="#" id="goPageTop"></a>
+                <a href="/" id="goPageHome"></a>
+            </section>
+        </div>
+
+    </div>
+</div>
+<link rel='stylesheet' href='/public/stylesheets/index.css'>

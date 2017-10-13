@@ -1,0 +1,28 @@
+.top_sec {
+    position: fixed;
+    bottom: 74px;
+    right: 12px;
+    width: 42px;
+    z-index: 999;
+    display: none;
+}
+
+#goPageTop {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: url(/public/images/go_top_icon.png) no-repeat 0 0;
+    background-size: 42px auto;
+    display: block;
+}
+
+#goPageHome {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    border-radius: 50%;
+    background: url(/public/images/go_home_icon.png) no-repeat 0 0;
+    background-size: 42px auto;
+    display: block;
+}

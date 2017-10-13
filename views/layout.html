@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel='stylesheet' href='/public/bootstrap/css/bootstrap.css'>
+	<link rel="stylesheet" type="text/css" href="/public/bootstrap/css/iconfont.css">
+	<link rel="stylesheet" href="/public/bootstrap/css/common.css">
+	<script src='/public/bootstrap/js/jquery-3.1.1.min.js'></script>
+	<script src='/public/bootstrap/js/bootstrap.js'></script>
+	<style>
+
+		.navbar,#main{
+			width:1200px;
+			height:auto;
+			margin: 0px auto;
+			/*background-color: #1142ff;*/
+		}
+
+		#main{
+			margin-top: 20px;
+			/*background-color: #1142ff;*/
+		}
+		body{
+			background-color: rgb(239, 239, 239);
+		}
+		.footer{
+			height:40px;
+			padding: 10px 0px;
+			line-height: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="navbar" style="padding-left: 0px;padding-right: 0px"><%-partial('navbar')%></div>
+	<div id="main"><%- body %></div>
+	<div class="navbar footer" style="padding-left: 0px;padding-right: 0px"><%-partial('footer')%></div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<div class="cell reply-list">
+    <span><%=reply.username%></span><span><%=reply.timeStr%></span>
+    <div class="content">
+       <%-md.render(reply.content)%>
+    </div>
+</div>
+<link rel="stylesheet" href="/public/stylesheets/reply-list.css">

@@ -1,0 +1,10 @@
+<div class="cell reply-list">
+    <div style="overflow: auto;margin-bottom: 5px">
+        <span style="color: #ce4738" class="pull-left">网友：【<%=reply.username%>】</span>
+        <span style="color: #aeaeae" class="pull-right"><%=reply.timeStr%></span>
+    </div>
+    <div class="content">
+       <%-md.render(reply.content)%>
+    </div>
+</div>
+<link rel="stylesheet" href="/public/stylesheets/reply-list.css">

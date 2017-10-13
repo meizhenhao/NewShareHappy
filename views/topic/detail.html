@@ -1,0 +1,87 @@
+<%-layout('layout')%>
+<div class="container">
+    <div class="row">
+        <!--话题详情页左边部分-->
+        <div class="col-lg-9" style="padding-right: 0px;
+        padding-left: 0px;">
+            <!--话题部分-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title" style="font-size: 24px;"><%=topic.title%></h2>
+                    <div class="AuthorAndTime" style="margin-top:8px;height: 20px;">
+                        <span class="pull-left" style="color: #b9ce2b">作者：【<%=topic.username%>】</span>
+                        <span class="pull-right">发布时间：<%=topic.newTime%></span>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <%-md.render(topic.content)%>
+                </div>
+            </div>
+
+            <!--评论部分-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><%=count%>个回复</h3>
+                </div>
+                <div class="panel-body">
+                    <%-partial('reply/list',{collection:replys,as:'reply'})%>
+                </div>
+            </div>
+
+            <!--回复区域-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    添加回复
+                </div>
+                <div class="panel-body">
+                    <form action="/reply/reply" method="post" class="form-horizontal">
+                        <!--隐藏域告诉后台，该评论是针对哪个话题评论的-->
+                        <input type="hidden" name="topicId" value="<%=topic._id%>">
+                        <div class="form-group">
+                            <!--编辑器开始-->
+                            <div class="col-sm-12">
+                                <div style="border: 1px solid #ddd;">
+                                    <textarea name="content" id="t_content" cols="20" rows="10" class="editor"></textarea>
+                                </div>
+                            </div>
+                            <!--编辑框结束-->
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-primary">回复</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--回到顶部-->
+            <div style="width: 100px; height: 3000px;">
+                <!--这个带ID的p标签，叫做锚标记，放在页面顶部位置，目的：防止代码不起作用时(比如类库版本浏览器不支持)，你点击回到顶部，仍然可以通过锚标记实现-->
+                <p id="pageTop"></p>
+                <section id="top_sec" class="top_sec">
+                    <a href="#" id="goPageTop"></a>
+                    <a href="/" id="goPageHome"></a>
+                </section>
+            </div>
+
+        </div>
+        <!--话题详情页右边部分-->
+        <div class="col-lg-3">
+
+        </div>
+    </div>
+</div>
+<!--编辑器引入的一系列包和js文件-->
+<link rel="stylesheet" href="/public/webuploader/webuploader.css">
+<link rel='stylesheet' href='/public/editor/editor.css' />
+<script src='/public/javascripts/markdownit.js'></script>
+<script src='/public/webuploader/webuploader.withoutimage.js'></script>
+<script src='/public/editor/editor.js'></script>
+<script src='/public/editor/ext.js'></script>
+<script>
+    $(function(){
+        var editor = new Editor();
+        editor.render($('.editor')[0]);
+    })
+</script>
