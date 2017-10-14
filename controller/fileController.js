@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by Administrator on 2017/9/24 0024.
  */
 var TopicModel = require('../model/topic');
@@ -57,7 +57,7 @@ exports.doCreateFile=function (req,res) {
         var Filecontent = fieldsArray['content'];
         // 判断是否为空
         console.log('判断空开始....！');
-        var hasEmptyInfo = [Filetitle, Filetab, Filecontent,isFile].some(function(item){
+        var hasEmptyInfo = [Filetitle, Filetab, isFile].some(function(item){
             return item === '';
         })
         console.log('判断空结束！');
@@ -180,7 +180,7 @@ exports.downloadFile = function (req,res) {
     var fileId = q.Fileid;
     if(fromUrl){
         // 使用绝对路径
-        res.download('E:/myNodeJS/cnode'+fromUrl, function(err){
+        res.download('E:/myNodeJS/cnode1'+fromUrl, function(err){
             if (err) {
                 res.render('error',{message:'文件下载失败!'});
             } else {

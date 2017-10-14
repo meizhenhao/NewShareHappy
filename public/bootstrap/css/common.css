@@ -26,3 +26,7 @@
     background-size: 42px auto;
     display: block;
 }
+
+.navbar-default .navbar-nav  li  a:hover {
+    color: rgb(185,206,43);
+}
