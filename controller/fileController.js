@@ -180,7 +180,7 @@ exports.downloadFile = function (req,res) {
     var fileId = q.Fileid;
     if(fromUrl){
         // 使用绝对路径
-        res.download('E:/myNodeJS/cnode1'+fromUrl, function(err){
+        res.download('E:/myNodeJS/cnode/ShareHappy'+fromUrl, function(err){
             if (err) {
                 res.render('error',{message:'文件下载失败!'});
             } else {

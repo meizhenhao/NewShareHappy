@@ -63,9 +63,6 @@ app.use(session({
 }));
 app.use(logger('dev'));
 
-
-
-
 app.use('/public',express.static(path.join(__dirname, 'public')));
 
 app.locals.config=Config;
@@ -74,7 +71,6 @@ app.locals.md=md;
 //用于记录用户是否登录
 app.use(function(req, res, next){
     app.locals.current_user = req.session.user;
-    console.log("current_user="+app.locals.current_user);
     next();
 });
 // app.use('/', index);

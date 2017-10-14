@@ -30,3 +30,88 @@
 .navbar-default .navbar-nav  li  a:hover {
     color: rgb(185,206,43);
 }
+
+/*手机*/
+@media screen and (max-width: 767px) {
+    /*相当于在bootstrap定义的超小屏幕*/
+    body{
+        font-family: "SimSun";
+        font-size: 10px;
+
+    }
+    .col-xs-12{
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    .layout>.header{
+    margin-bottom: 8px;
+    }
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width:768px) {
+    body{
+        font-family: "SimSun";
+        font-size: 14px;
+    }
+    .col-sm-12{
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    .layout>.header{
+    margin-bottom: 8px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width:992px) {
+    body{
+        font-family: "SimSun";
+        font-size: 14px;
+
+    }
+    .col-md-12{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .layout>.header{
+        margin-bottom: 15px;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width:1200px) {
+    body{
+        font-family: "SimSun";
+        font-size: 16px;
+
+    }
+    .col-lg-12{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .layout>.header{
+        margin-bottom: 15px;
+    }
+}
+
+/*所有的屏幕*/
+/*导航栏标题，tab标题*/
+.font-title,.font-title-2{
+    font-family: "Microsoft YaHei";
+    font-weight: 500;
+}
+
+.col-lg-12 .col-md-12{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.col-xs-12 .col-sm-12{
+    padding-left: 8px;
+    padding-right: 2px;
+}
+.layout footer{
+    height: 50px;
+    line-height: 30px;
+}
+
