@@ -15,7 +15,7 @@ exports.index = function(req, res){
 		query.tab = tab;
 	}
 	var ep = new eventproxy();
-	var count = 2;
+	var count = 5;
 	var option = {skip: (page-1)*count, limit: count, sort: '-insertTime'};
 
 	topicModel.getTopics(query, option, function(err, topics){
@@ -55,7 +55,7 @@ exports.showResourceList = function(req, res){
     }
 
     var ep = new eventproxy();
-    var count = 2;
+    var count = 5;
     var option = {skip: (page-1)*count, limit: count, sort: '-insertTime'};
 
     fileModel.getFiles(query, option, function(err, files){

@@ -37,14 +37,28 @@
     body{
         font-family: "SimSun";
         font-size: 10px;
-
+        padding: 0px 10px;
     }
     .col-xs-12{
-        padding-left: 15px;
+        padding-left: 0px;
         padding-right: 0px;
     }
+
     .layout>.header{
-    margin-bottom: 8px;
+        margin-bottom: -10px;
+    }
+
+    /*关于博主*/
+    #aboutME > li{
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    /*个人信息*/
+    #personal-info{
+        margin-top: 0px;
+        line-height: 25px;
+        font-size: 16px;
+        padding-left: 20px;
     }
 }
 /* 小屏幕（平板，大于等于 768px） */
@@ -89,8 +103,23 @@
         padding-left: 0px;
         padding-right: 0px;
     }
+    .col-lg-9{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .col-lg-3{
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+
     .layout>.header{
         margin-bottom: 15px;
+    }
+    /*个人信息*/
+    #personal-info{
+        margin-top: 20px;
+        line-height: 25px;
+        font-size: 16px;
     }
 }
 
