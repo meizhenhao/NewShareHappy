@@ -139,9 +139,9 @@ exports.detail = function (req,res) {
     console.log("detail方法开始。。。")
     FileModel.getFile(FileId,function (err,file) {
 
-        file.newTime = file.insertTime.toLocaleDateString()
-            + ' '
-            + file.insertTime.toTimeString().replace(/\sGM.*$/, '');
+        file.newTime = file.insertTime.toLocaleDateString();
+            // + ' '
+            // + file.insertTime.toTimeString().replace(/\sGM.*$/, '');
         console.log('getTopic方法开始...');
         ep.emit('file_data_ok',file);
 
